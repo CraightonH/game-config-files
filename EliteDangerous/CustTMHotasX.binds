@@ -647,11 +647,11 @@
 	</HeadLookReset>
 	<HeadLookPitchUp>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="ThrustMasterTFlightHOTASX" Key="Joy_POV1Down" />
+		<Secondary Device="ThrustMasterTFlightHOTASX" Key="Joy_POV1Up" />
 	</HeadLookPitchUp>
 	<HeadLookPitchDown>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="ThrustMasterTFlightHOTASX" Key="Joy_POV1Up" />
+		<Secondary Device="ThrustMasterTFlightHOTASX" Key="Joy_POV1Down" />
 	</HeadLookPitchDown>
 	<HeadLookPitchAxisRaw>
 		<Binding Device="Mouse" Key="Mouse_YAxis" />
@@ -688,7 +688,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamPitchDown>
 	<CamYawAxis>
-		<Binding Device="{NoDevice}" Key="" />
+		<Binding Device="ThrustMasterTFlightHOTASX" Key="Joy_RZAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamYawAxis>
@@ -701,7 +701,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamYawRight>
 	<CamTranslateYAxis>
-		<Binding Device="{NoDevice}" Key="" />
+		<Binding Device="ThrustMasterTFlightHOTASX" Key="Joy_YAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateYAxis>
@@ -714,7 +714,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamTranslateBackward>
 	<CamTranslateXAxis>
-		<Binding Device="{NoDevice}" Key="" />
+		<Binding Device="ThrustMasterTFlightHOTASX" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateXAxis>
@@ -727,8 +727,8 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamTranslateRight>
 	<CamTranslateZAxis>
-		<Binding Device="{NoDevice}" Key="" />
-		<Inverted Value="0" />
+		<Binding Device="ThrustMasterTFlightHOTASX" Key="Joy_UAxis" />
+		<Inverted Value="1" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateZAxis>
 	<CamTranslateUp>
@@ -988,7 +988,9 @@
 	</OpenCodexGoToDiscovery_Buggy>
 	<PlayerHUDModeToggle_Buggy>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="ThrustMasterTFlightHOTASX" Key="Joy_3">
+			<Modifier Device="ThrustMasterTFlightHOTASX" Key="Joy_5" />
+		</Secondary>
 	</PlayerHUDModeToggle_Buggy>
 	<HeadLookToggle_Buggy>
 		<Primary Device="Mouse" Key="Mouse_3" />
